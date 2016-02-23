@@ -59,3 +59,35 @@
 .reveal ul li {
   list-style-type: square;
 }
+
+.reveal .controls a {  
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #13DAEC;
+  top: 42px;
+  left: 42px;
+  opacity: 0.7;
+  -webkit-transform: scale(0.9999);
+      -ms-transform: scale(0.9999);
+          transform: scale(0.9999);
+  -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.reveal .controls a:after {
+  position: absolute;
+  left: 15%;
+  top: 10%;
+  color: #eee;
+  content: attr(langEx);
+  font-weight: bold;
+  font-size: .5em;
+  text-transform: uppercase;
+}
+
+.reveal .controls a:hover {
+  opacity: 1.0;
+}
